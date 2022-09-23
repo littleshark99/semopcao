@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quer Namorar Cmg?</title>
+
+	<style type="text/css">
+		body
+		{
+			background: pink;
+			color: white;
+		}
+
+		p
+		{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		button{
+			background-color: red;
+			color: white;
+			width: 100px;
+			position: absolute;
+		}
+		.hidden{
+			display: none;
+		}
+		#move{
+			left: 200px;
+		}
+		#change:hover{
+			cursor: pointer;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+<script>
+
+	function change()
+	{
+		var i = Math.floor(Math.random()*300)+1;
+		var j = Math.floor(Math.random()*100)+1;
+		$("#move").css({top:j+'px',left: i+'px'});
+	}
+
+
+
+
+	$("#change").click(function(){
+	$("#change").html("sim");
+	$("#move").show();	
+	});
+
+	$("#move").hover(function(){
+		change();
+	});
+
+</script>
+
+
+<p>Quer Namorar Comigo ?</p>
+
+<button id="change">Sim </button>
+<button class="hidden" id="move">Não</button>
+
+</body>
+</html>
