@@ -1,1 +1,1 @@
-Para fazer funcionar tem que usar node.js 
+Para fazer funcionar tem que usar jquery 
